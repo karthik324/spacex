@@ -1,0 +1,282 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif,'Montserrat', 'Roboto';
+    line-height: 1.4;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+    
+   
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../SpaceX/images/Homepage_Starlink_4-5_Desktop.jpg.webp);
+    background-size: cover;
+    background-position: center;
+    
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.logo{
+    cursor: pointer;
+    margin-top: -60px;
+    margin-left: -10px;
+    
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px 50px;
+    position: relative;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font: 14px/28px bold,Arial,Verdana,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    margin-left: -20px;
+    
+}
+ul{
+    margin-left: -200px;
+}
+a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font: 14px/28px bold,Arial,Verdana,sans-serif;
+    font-weight: 500;
+    
+}
+.shop{
+    margin-bottom: 50px;
+    
+}
+.menu-wrap {
+    position: fixed;
+    top: 11px;
+    left: 1450px;
+    z-index: 1;
+}
+  
+.menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+  
+.menu-wrap .hamburger {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  /* Hamburger Line */
+.menu-wrap .hamburger > div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+  
+  /* Hamburger Lines - Top & Bottom */
+  .menu-wrap .hamburger > div::before,
+  .menu-wrap .hamburger > div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+  }
+  
+  /* Moves Line Down */
+  .menu-wrap .hamburger > div::after {
+    top: 10px;
+  }
+  
+  /* Toggler Animation */
+  .menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+  
+  /* Turns Lines Into X */
+  .menu-wrap .toggler:checked + .hamburger > div:before,
+  .menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  /* Rotate On Hover When Checked */
+  .menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+  }
+  
+.menu-wrap .menu > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    color: white;
+    left: 8%;
+    font-style: normal;
+    font: 25px/18px medium,'ROBOTO',sans-serif,'montserrat';
+    
+}
+.main{
+    font-weight: bolder;
+    margin-top: 30px;
+
+}
+button{
+    width: 160px;
+    padding: 15px;
+    text-align: center;
+    margin: 60px 1px ;
+    border-radius: 2px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: -18px;
+    bottom: 2px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 110%;
+}
+span{
+    background: #fff;
+    height: 0;
+    width: 0;
+    border-radius: 2px;
+    position: absolute;
+    left: 8px;
+    bottom: 0;
+    z-index: -1;
+
+
+}
+button:hover span{
+    width: 100%;
+    height: 100;
+    
+
+}
+button:hover{
+    background: #fff;
+    color: black;
+    
+}
+.secondPage{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../SpaceX/images/DESKTOP_CRS24_homepage.webp);
+    background-size: cover;
+    background-position: center;
+}
+.main{
+    color: #fff;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.rec{
+    color: #fff;
+    font-weight: bolder;
+    padding-top: 450px;
+    padding-left: 140px;
+    width: 100%;
+    position: absolute;
+    font-style: normal;
+    font: 25px/18px medium,'ROBOTO',sans-serif,'montserrat';
+
+   
+}
+.crs{
+    color: #ffff;
+    padding-top: 480px;
+    padding-left: 140px;
+    font-weight: bolder;
+    max-width: 90%;
+    margin-left: 0;
+    font-size: 48px;
+    line-height: 48px;
+   
+}
+.btn{
+    margin-left: 140px;
+}
+.footer{
+    background: rgb(0, 0, 0);
+    height: 80px;
+    width: 100%;
+    
+}
+.socialLinks table{
+    color: white;
+    display: flex;
+    padding: 0;
+    margin-left: 400px;
+   
+}
+table .item{
+    display:inline;
+    padding: 10px;
+    
+    
+}
+table :hover{
+    color: rgb(180, 180, 168);
+    transition: 0.4s;
+} 
