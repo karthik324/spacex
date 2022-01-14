@@ -15,7 +15,7 @@ body{
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: url(/SpaceX/images/Homepage_Starlink_4-5_Desktop.jpg.webp);
+    background-image: url(images/homepage1.png);
     background-size: cover;
     background-position: center;
     
@@ -222,7 +222,7 @@ button:hover{
 .secondPage{
     width: 100%;
     height: 100vh;
-    background-image: url(/SpaceX/images/DESKTOP_CRS24_homepage.webp);
+    background-image: url(images/homepage2.png);
     background-size: cover;
     background-position: center;
 }
